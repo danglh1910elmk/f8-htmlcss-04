@@ -34,6 +34,7 @@ textarea {
 .btn {
     height: 56px;
     border-radius: 31px;
+    border: 1px solid #ff5b2e;
     color: #fff;
     text-align: center;
     font-family: Poppins;
@@ -81,6 +82,13 @@ button {
     font-family: Poppins;
     font-size: 1.4rem;
     line-height: 1.71;
+}
+
+.truncate {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 /* ?======================= individual selectors ======================== */
@@ -644,3 +652,144 @@ button {
 }
 
 /* ?======================= services section ======================== */
+.services {
+    padding: 68px 0 139px;
+    background: #fff6ed;
+}
+
+.services__container {
+    position: relative;
+}
+
+.services__desc {
+    color: #5e6085;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.services__heading {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.services__column-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.services__column {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+}
+
+.services__item {
+    padding: 30px 22px 26px 28px;
+    width: 294px;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 188, 122, 0.26);
+    background: #fff;
+}
+
+.services__title {
+    display: inline-block;
+    padding-left: 14px;
+    position: relative;
+}
+
+.services__title::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    border-radius: 2px;
+    background: linear-gradient(63deg, #ff5b2e 0%, #ffa187 100%);
+}
+
+.services__item-desc {
+    margin: 18px 0 24px;
+}
+
+.services__item-cta {
+    color: #34396a;
+    font-size: 1.2rem;
+    line-height: 1;
+    display: inline-flex;
+    align-items: center;
+    column-gap: 6px;
+
+    padding-bottom: 4px;
+    position: relative;
+}
+
+.services__item-cta::after {
+    content: "";
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #ff5b2e;
+    transform: scale(0);
+    transition: transform 0.25s ease-out;
+}
+
+.services__item-cta:hover::after {
+    transform: scale(1);
+}
+
+.services__mid-block {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 45px;
+
+    position: absolute;
+    top: 124px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.services__img-wrapper {
+    width: 447px;
+    height: 650px;
+    position: relative;
+    background-color: pink;
+    z-index: 5;
+}
+
+.services__img-background {
+    width: 410px;
+    height: 350px;
+    border-radius: 10px;
+    background: linear-gradient(180deg, #9df1fb 0%, #73d0db 100%);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.services__img {
+    object-fit: cover;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.services__btn {
+    width: 214px;
+    border: 1px solid #ff5b2e;
+    box-shadow: 0px 13px 26px -8px rgba(255, 91, 46, 0.42);
+    color: #ff5b2e;
+}
+
+.services__btn:hover {
+    opacity: 0.7;
+}
+
+/* ?======================= staff section ======================== */
