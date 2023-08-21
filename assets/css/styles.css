@@ -135,6 +135,15 @@ button {
     border-radius: 25px;
     border: 1px solid #000958;
     opacity: 0.7;
+    transition: background-color 0.5s ease, color 0.5s ease,
+        border-color 0.5s ease, opacity 0.5s ease;
+}
+
+.header__btn:hover {
+    background-color: #ff5b2e;
+    border-color: #ff5b2e;
+    color: #fff;
+    opacity: 1;
 }
 
 /* ?======================= hero section ======================== */
@@ -636,7 +645,7 @@ button {
     display: block;
 }
 
-.vacation-services__desc {
+.vacation-services__item-desc {
     margin: 36px 0 32px;
     width: 391px;
 }
@@ -649,6 +658,11 @@ button {
     line-height: 1;
     text-decoration: underline;
     text-underline-offset: 5px;
+    transition: opacity 0.4s ease;
+}
+
+.vacation-services__cta:hover {
+    opacity: 0.7;
 }
 
 /* ?======================= services section ======================== */
@@ -758,8 +772,7 @@ button {
     width: 447px;
     height: 650px;
     position: relative;
-    background-color: pink;
-    z-index: 5;
+    z-index: 2;
 }
 
 .services__img-background {
@@ -840,7 +853,7 @@ button {
 }
 
 .staff__item:nth-of-type(odd) .staff__deco {
-    bottom: 69px;
+    bottom: 80px;
     left: -17px;
 }
 
@@ -1258,3 +1271,177 @@ button {
 }
 
 /* ?======================= footer ======================== */
+.footer {
+    padding-bottom: 48px;
+    position: relative;
+}
+
+.footer__left-underlay {
+    width: 42.7%;
+    height: 100%;
+    background: #fff6ed;
+    position: absolute;
+    left: 0;
+    z-index: -1;
+}
+
+.footer__right-underlay {
+    width: 57.3%;
+    height: 100%;
+    background: #fffaf5;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+}
+
+.footer__container {
+    display: flex;
+    padding-bottom: 66px;
+    position: relative;
+}
+
+.footer__left {
+    padding-top: 114px;
+    width: 41%;
+}
+
+.footer__right {
+    padding-top: 52px;
+    width: 59%;
+}
+
+.footer__form {
+    margin-top: 35px;
+    display: inline-block;
+    position: relative;
+}
+
+.footer__input {
+    outline: none;
+    padding: 0px 8px;
+    width: 268px;
+    height: 46px;
+    border-radius: 23px;
+    border: 1px solid rgba(255, 91, 46, 0.25);
+    background: #fff;
+}
+
+.footer__btn {
+    height: 46px;
+    width: 46px;
+    border-radius: 50%;
+    border: 1.5px solid #ffd1c4;
+    color: #ff5b2e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.4s ease, background-color 0.4s ease,
+        border-color 0.4s ease;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.footer__btn:hover {
+    background-color: #ff5b2e;
+    border-color: #ff5b2e;
+    color: #fff;
+}
+
+.footer__cta-text {
+    margin-top: 68px;
+    color: #000958;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.11;
+}
+
+.footer__socials-wrapper {
+    margin-top: 16px;
+    display: flex;
+    column-gap: 16px;
+}
+
+.footer__social {
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    color: #000958;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.footer__social:hover {
+    background-color: #ff5b2e;
+    color: #fff;
+}
+
+.footer__social-icon {
+    width: 14px;
+}
+
+/* ==== footer right ==== */
+.footer__grid {
+    margin-left: 130px;
+    display: grid;
+    grid-template-columns: max-content max-content;
+    grid-template-rows: auto auto;
+    justify-content: space-between;
+    row-gap: 58px;
+}
+
+.footer__heading {
+    color: #000958;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.11;
+}
+
+.footer__list {
+    margin-top: 14px;
+}
+
+.footer__link {
+    color: #656689;
+    font-family: Poppins;
+    font-size: 1.4rem;
+    line-height: 2;
+    transition: text-decoration 0.4s ease;
+}
+
+a.footer__link:hover {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+.footer__copyright {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #656689;
+    font-family: Poppins;
+    font-size: 1.2rem;
+    line-height: 1.17;
+}
+
+/* Customize the scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #ededed;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #b1b1b1;
+    border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #929292;
+}
